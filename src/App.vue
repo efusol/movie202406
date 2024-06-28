@@ -2,7 +2,7 @@
   <div class="app">
     <header>
       <h1>The <strong>Movie</strong> Database</h1>
-      <form class="search-box" @submit="handleSearch">
+      <form class="search-box" @submit.prevent="handleSearch">
         <input type="search" class="search-field" placeholder="search for Movie..." v-model="search_query">
       </form>
     </header>
